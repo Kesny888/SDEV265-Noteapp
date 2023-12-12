@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
+   <children>
+      <ImageView fitHeight="803.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@loginBackground.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="signUpPage" prefHeight="803.0" prefWidth="1201.0">
+         <children>
+            <Pane layoutX="343.0" layoutY="113.0" prefHeight="587.0" prefWidth="513.0">
+               <children>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ebe3d5" height="648.0" layoutY="-58.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="512.0" />
+                  <VBox alignment="TOP_CENTER" layoutX="68.0" layoutY="-21.0" prefHeight="581.0" prefWidth="376.0" spacing="15.0">
+                     <children>
+                        <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#home" prefHeight="76.0" prefWidth="232.0" style="-fx-background-color: transparent;" text="GomiNote" textFill="#776b5d">
+                           <font>
+                              <Font name="Avenir Next Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Label text="Sign In" textFill="#776b5d">
+                           <font>
+                              <Font name="Avenir Next Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Email or username" textFill="#776b5d">
+                           <font>
+                              <Font name="Avenir Next Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="150.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfEmail" prefHeight="34.0" prefWidth="253.0" promptText="Enter your email or username">
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Create Password" textFill="#776b5d">
+                           <font>
+                              <Font name="Avenir Next Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="160.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="tfPassword" prefHeight="34.0" promptText="Enter your password">
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Label text="Confirm Password" textFill="#776b5d">
+                           <font>
+                              <Font name="Avenir Next Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="150.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="tfconfirmpw" prefHeight="34.0" prefWidth="324.0" promptText="Confirm  your password">
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#Signup" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #776b5d;" text="Sign Up" textFill="WHITE">
+                           <font>
+                              <Font name="Avenir Next Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label text="Already have an account?" />
+                        <Button fx:id="signInButton" mnemonicParsing="false" onAction="#SignIn" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #776b5d;" text="Sign In" textFill="WHITE">
+                           <font>
+                              <Font name="Avenir Next Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="status" alignment="CENTER" prefHeight="17.0" prefWidth="286.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
