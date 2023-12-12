@@ -1,12 +1,8 @@
 
-import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextArea;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 
@@ -28,13 +24,6 @@ public class App extends Application {
         }
     }
 
-    // public static void notesPage(Stage stage) {
-    //     TextArea editor = new TextArea();
-    //     BorderPane root = new BorderPane(editor);
-    //     Scene scene = new Scene(root, 800, 600);
-    //     stage.setScene(scene);
-    //     stage.show();
-    // };
 
     public static void main(String[] args) {
         launch(args);

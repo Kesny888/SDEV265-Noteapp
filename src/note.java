@@ -88,14 +88,18 @@ public class note implements Initializable{
     }
 
     @FXML
-    void clickedNew(MouseEvent event){
+    void clickedNew(MouseEvent event) throws IOException{
     
     Alert alert = new Alert(AlertType.CONFIRMATION);
         alert.setTitle("New Note");
         alert.setHeaderText("Do you want to open a new Note?");
 
         if(alert.showAndWait().get() == ButtonType.OK){
-            textArea.clear();
+            //textArea.clear();
+            Parent root = FXMLLoader.load(getClass().getResource("note.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
         }
         
 

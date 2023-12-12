@@ -128,7 +128,7 @@ public class login {
             status.setStyle("-fx-text-fill:red");
         }
 
-        else if(user.equals("team") && pass.equals("123")) {
+        else if(user.equals("team2@gmail.com") && pass.equals("123456")) {
             status.setText("Username and Password is correct");
             status.setStyle("-fx-text-fill:green");
             Parent root = FXMLLoader.load(getClass().getResource("note.fxml"));
